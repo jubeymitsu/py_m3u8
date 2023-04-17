@@ -29,7 +29,7 @@ for segment in segments:
         extended_segment['segment_method'] = True
         extended_segment['method_uri'] = segment.get('key').get('uri')
 
-        segments_data[segment_uri] = extended_segment
+    segments_data[segment_uri] = extended_segment
 
 # И наконец качаем все сегменты с расшифровкой
 uris = segments_data.keys()
